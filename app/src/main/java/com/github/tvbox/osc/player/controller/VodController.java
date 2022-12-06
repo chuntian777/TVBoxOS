@@ -932,3 +932,12 @@ public class VodController extends BaseController {
         return false;
     }
 }
+
+    if(playstate ){
+        if(playState==6 && !seektoo)
+        {
+            playstate=false;
+            listener.replay(false);
+            seektoo=false;
+        }
+    }
