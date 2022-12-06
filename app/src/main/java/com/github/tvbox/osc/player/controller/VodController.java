@@ -905,14 +905,7 @@ public class VodController extends BaseController {
         return super.onTouchEvent(e);
     }
 
-    if(playstate ){
-        if(playState==6 && !seektoo)
-        {
-            playstate=false;
-            listener.replay(false);
-            seektoo=false;
-        }
-    }
+
     
     @Override
     public boolean onSingleTapConfirmed(MotionEvent e) {
